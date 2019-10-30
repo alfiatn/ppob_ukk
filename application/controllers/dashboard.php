@@ -23,5 +23,5 @@ class dashboard extends CI_Controller {
 
 }
 
-/* End of file Kasir.php */
-/* Location: ./application/controllers/Kasir.php */
+/* End of file dashboard.php */
+/* Location: ./application/controllers/dashboard.php */

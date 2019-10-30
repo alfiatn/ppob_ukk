@@ -15,11 +15,13 @@ class login_model extends CI_Model {
 
     if($query->num_rows() > 0)
     {
+      $data_login = $query->row();
       $session = array(
-                        'username'     => $username,
-                        'password'     => $password,
+                        'id_admin'     => $data_login->id_admin,
+                        'username'     => $data_login->username,
+                        'password'     => $data_login->password,
                         'login_status' => TRUE,
-                        'nama_level'   => $data_login->nama_level
+                        'id_level'     => $data_login->id_level
                       );
 
       $this->session->set_userdata($session);
